@@ -1,6 +1,6 @@
 import { Command } from "commander";
 import { getToken, setToken, removeToken, hasToken, maskToken } from "../lib/auth.js";
-import { client } from "../lib/client.js";
+import { clientV2 } from "../lib/client.js";
 import { log } from "../lib/logger.js";
 import { handleError } from "../lib/errors.js";
 
@@ -45,7 +45,7 @@ authCommand
   .addHelpText("after", "\nExample:\n  readwise-cli auth test")
   .action(async () => {
     try {
-      await client.get("/");
+      await clientV2.get("/auth/");
       log.success("Token is valid");
     } catch (err) {
       handleError(err);
