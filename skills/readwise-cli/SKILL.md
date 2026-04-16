@@ -1,5 +1,5 @@
 ---
-name: readwise
+name: readwise-cli
 description: "Manage Readwise & Reader via CLI - documents, tags, highlights, books, review. Use when user mentions 'readwise', 'reader', 'read later', 'reading list', 'save article', 'highlights', 'daily review', 'book notes', or wants to interact with the Readwise API."
 category: productivity
 ---
